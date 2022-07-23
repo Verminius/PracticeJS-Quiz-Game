@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  background-color: rgb(16, 36, 7);
+  background-image: url(/img/fondo\ animado.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -72,6 +75,7 @@ h2 {
 }
 
 .btn:hover {
+  color: white;
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(154, 244, 8, 0.6);
   transition: transform 150ms;
@@ -79,6 +83,8 @@ h2 {
 }
 
 .btn[disabled]:hover {
+  background: rgb(165, 165, 165);
+  color: gray;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -109,6 +115,8 @@ input {
 
 input::placeholder {
   color: grey;
+  font-style: normal;
+  font-weight: 400;
 }
 
 #username {
