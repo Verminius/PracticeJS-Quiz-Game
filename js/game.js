@@ -13,11 +13,11 @@ let availableQuestions = [];
 let questions = [
   {
     question: "¿El riesgo biológico es originado por?",
-    choice1: "Quimicos",
-    choice2: "Microorganismos",
-    choice3: "Radiaciones ionzantes",
+    choice1: "Microorganismos",
+    choice2: "Radiaciones ionzantes",
+    choice3: "Quimicos",
     choice4: "Electricidad",
-    answer: 1,
+    answer: 3,
   },
   {
     question: "Un ejemplo de objetos corto-punzantes pueden ser:",
@@ -36,10 +36,98 @@ let questions = [
     choice4: "En contenedor rígido específico o guardián",
     answer: 1,
   },
+  {
+    question: "El lavado de manos previene",
+    choice1: "Enfermedades infectocontagiosas",
+    choice2: "Enfermedades psicologicas",
+    choice3: "La migraña",
+    choice4: "El embarazo",
+    answer: 1,
+  },
+
+  {
+    question:
+      "En lo que respecta a los elementos de protección personal es cierto:",
+    choice1:
+      "Son responsabilidad compartida entre el empleador y el trabajador.",
+    choice2: "Favorecen el contacto directo con sustancias.",
+    choice3: "No son responsabilidad del empleador.",
+    choice4: "No son responsabilidad del trabajador.",
+    answer: 1,
+  },
+
+  {
+    question: "La eficácia de la vacunación de Hepatitis B se valida con:",
+    choice1: "Valoración médica",
+    choice2: "Titulaciones",
+    choice3: "Coprológico",
+    choice4: "Gases Arteriales",
+    answer: 1,
+  },
+  {
+    question: "Doblar o partir agujas manualmente…",
+    choice1: "Es una causal de accidentes",
+    choice2: "Es una práctica de Trabajo seguro",
+    choice3: "Es necesario para desecharlas",
+    choice4: "Ninguna de las anteriores",
+    answer: 1,
+  },
+  {
+    question: "Para la prevención de salpicaduras en los ojos utilíce:",
+    choice1: "Gafas de seguridad",
+    choice2: "Gorro",
+    choice3: "Uniforme antifluido",
+    choice4: "Tapabocas",
+    answer: 1,
+  },
+  {
+    question: "Son causas de accidentes por objeto corto-punzante, excepto:",
+    choice1: "Transportar objetos corto-punzantes protegidos",
+    choice2:
+      "El paciente se mueve de manera repentina durante el procedimiento",
+    choice3: "No depositar de inmediato el corto-punzante en el guardián",
+    choice4: "Doblar o partir agujas manualmente",
+    answer: 1,
+  },
+  {
+    question:
+      "Son acciones preventivas para el manejo de objetos corto-punzantes, excepto:",
+    choice1: "Descartar la aguja en el guardián con la mano que venopuncionó",
+    choice2: "Usar los EPP de acuerdo al procedimiento",
+    choice3: "Re-encapuchar las agujas",
+    choice4: "Solicitar ayuda en casos especiales",
+    answer: 1,
+  },
+  {
+    question: "Son ejemplos de comportamientos seguros, excepto:",
+    choice1: "Dejar las agujas abandonadas",
+    choice2: "Depositar las agujas en el guardián",
+    choice3: "Lavarse las manos después de un procedimiento",
+    choice4: "Usar los EPP en forma correcta",
+    answer: 1,
+  },
+  {
+    question:
+      "La técnica para descarte de agujas en área asistencial consiste en:",
+    choice1: "Descartar la aguja en el guardián con la mano que venopuncionó",
+    choice2: "Lo hago como puedo",
+    choice3: "Re-encapuchar las agujas",
+    choice4: "Solicitar ayuda en casos especiales",
+    answer: 1,
+  },
+  {
+    question:
+      "Son acciones preventivas para el manejo de objetos corto-punzantes, excepto:",
+    choice1: "Descartar la aguja en el guardián con la mano que venopuncionó",
+    choice2: "Girar para buscar el guardián",
+    choice3: "Lo hago como puedo",
+    choice4: "Todas son correctas",
+    answer: 1,
+  },
 ];
 
-const SCORE_POINTS = 5;
-const MAX_QUESTIONS = 3;
+const SCORE_POINTS = 1;
+const MAX_QUESTIONS = 13;
 
 startGame = () => {
   questionCounter = 0;
