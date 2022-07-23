@@ -13,14 +13,15 @@ body {
   margin: 0.5rem;
   width: 48%;
   border-radius: 50px;
-  background: rgb(5, 136, 141);
+  background: linear-gradient(#92dbaf, #40ca77);
   font-size: 3rem;
   min-width: 25rem;
+  border: 4px solid white;
 }
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(29, 112, 3, 0.6);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(106, 226, 70, 0.6);
   transition: transform 150ms;
   transform: scale(1.03);
 }
@@ -43,11 +44,11 @@ body {
 }
 
 .correct {
-  background: green;
+  background: linear-gradient(#40ca77, #008c44);
 }
 
 .incorrect {
-  background: red;
+  background: linear-gradient(#d94659, #991022);
 }
 
 /* Header*/
