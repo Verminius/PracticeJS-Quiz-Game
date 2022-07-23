@@ -2,14 +2,20 @@ body {
   color: white;
 }
 
+.choices {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .choice-container {
   display: flex;
-  margin-bottom: 0.8rem;
+  margin: 0.5rem;
   width: 48%;
-  border-radius: 4px;
+  border-radius: 50px;
   background: rgb(5, 136, 141);
   font-size: 3rem;
-  min-width: 80rem;
+  min-width: 25rem;
 }
 
 .choice-container:hover {
@@ -22,11 +28,18 @@ body {
 .choice-prefix {
   padding: 2rem 2.5rem;
   color: white;
+  text-align: center;
+  align-self: center;
 }
 
 .choice-text {
   padding: 2rem;
   width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .correct {
@@ -66,6 +79,7 @@ body {
   height: 100%;
   background: green;
   width: 0%;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {

@@ -18,15 +18,16 @@
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 3rem;
   color: white;
   margin-bottom: 5rem;
   font-style: normal;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 2.8rem;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .container {
