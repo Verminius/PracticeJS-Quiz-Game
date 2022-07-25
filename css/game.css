@@ -2,6 +2,23 @@ body {
   color: white;
 }
 
+.q-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50px;
+  background: linear-gradient(#40ca77, #33b165);
+  border: 2px solid white;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.q-container h2 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
 .choices {
   width: 100%;
   display: flex;
@@ -15,15 +32,16 @@ body {
   margin: 0.5rem;
   width: 48%;
   border-radius: 50px;
-  background: linear-gradient(#40ca77, #33b165);
+  background: #92dbaf;
   font-size: 3rem;
   min-width: 25rem;
-  border: 4px solid white;
+  border: 2px solid white;
 }
 
 .choice-container:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(106, 226, 70, 0.6);
+  border: 4px solid white;
   transition: transform 150ms;
   transform: scale(1.03);
 }
@@ -44,7 +62,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: white;
+  color: #008c44;
 }
 
 .correct {
