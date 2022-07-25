@@ -97,18 +97,41 @@ body {
 }
 
 #progressBar {
+  display: flex;
+  align-items: flex-end;
   width: 20rem;
-  height: 2rem;
+  height: 39rem;
   border: 0.2rem solid green;
   margin-top: 2.4rem;
-  border-radius: 50px;
+  border-radius: 20px;
   overflow: hidden;
+}
+
+.puntos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  height: 39rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.puntos-container h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0%;
+  text-align: center;
+  color: white;
 }
 
 #progressBarFull {
   height: 100%;
   background: green;
-  width: 0%;
+  width: 100%;
+  border-radius: 15px;
   transition: 0.3s;
 }
 
@@ -116,8 +139,38 @@ body {
   position: absolute;
   z-index: -1;
   width: auto;
-  height: 90%;
+  height: 80%;
   justify-self: flex-start;
+}
+
+.ayudas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ayuda-logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+  background: #ffdc5d;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.ayuda-logo:hover {
+  background-color: #f0ba47;
+  transition: transform 150ms;
+  transform: scale(1.1);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(223, 226, 70, 0.712);
+  cursor: pointer;
+}
+
+.disable {
+}
+
+.ayuda-logo img {
+  width: 100%;
 }
 
 /*Questions Container*/
@@ -138,7 +191,44 @@ body {
     position: absolute;
     z-index: -1;
     width: auto;
-    height: 70%;
+    height: 58%;
     justify-self: flex-start;
+  }
+
+  .q-container {
+    align-self: center;
+    width: 45rem;
+    min-width: 25rem;
+  }
+
+  #progressBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 18rem;
+    height: 30rem;
+    border: 0.2rem solid green;
+    margin-top: 2.4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .puntos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .puntos-container h6 {
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
   }
 }

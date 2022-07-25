@@ -30,39 +30,39 @@ let questions = [
   {
     question:
       "La disposición de guantes, gasas, ropa desechable contaminada se hace:",
-    choice1: "En caneca roja por ser biosanitarios",
-    choice2: "En caneca verde",
-    choice3: "En caneca gris para ser reutilizado",
-    choice4: "En contenedor rígido específico o guardián",
-    answer: 1,
+    choice1: "En caneca verde",
+    choice2: "En caneca gris para ser reutilizado",
+    choice3: "En contenedor rígido específico o guardián",
+    choice4: "En caneca roja por ser biosanitarios",
+    answer: 4,
   },
   {
     question: "El lavado de manos previene",
-    choice1: "Enfermedades infectocontagiosas",
-    choice2: "Enfermedades psicologicas",
+    choice1: "Enfermedades psicologicas",
+    choice2: "Enfermedades infectocontagiosas",
     choice3: "La migraña",
     choice4: "El embarazo",
-    answer: 1,
+    answer: 2,
   },
 
   {
     question:
       "En lo que respecta a los elementos de protección personal es cierto:",
-    choice1:
+    choice1: "Favorecen el contacto directo con sustancias.",
+    choice2: "No son responsabilidad del empleador.",
+    choice3:
       "Son responsabilidad compartida entre el empleador y el trabajador.",
-    choice2: "Favorecen el contacto directo con sustancias.",
-    choice3: "No son responsabilidad del empleador.",
     choice4: "No son responsabilidad del trabajador.",
-    answer: 1,
+    answer: 3,
   },
 
   {
     question: "La eficácia de la vacunación de Hepatitis B se valida con:",
-    choice1: "Valoración médica",
-    choice2: "Titulaciones",
-    choice3: "Coprológico",
-    choice4: "Gases Arteriales",
-    answer: 1,
+    choice1: "Titulaciones",
+    choice2: "Coprológico",
+    choice3: "Gases Arteriales",
+    choice4: "Valoración médica",
+    answer: 4,
   },
   {
     question: "Doblar o partir agujas manualmente…",
@@ -74,29 +74,29 @@ let questions = [
   },
   {
     question: "Para la prevención de salpicaduras en los ojos utilíce:",
-    choice1: "Gafas de seguridad",
-    choice2: "Gorro",
+    choice1: "Gorro",
+    choice2: "Gafas de seguridad",
     choice3: "Uniforme antifluido",
     choice4: "Tapabocas",
-    answer: 1,
+    answer: 2,
   },
   {
     question: "Son causas de accidentes por objeto corto-punzante, excepto:",
-    choice1: "Transportar objetos corto-punzantes protegidos",
-    choice2:
+    choice1:
       "El paciente se mueve de manera repentina durante el procedimiento",
-    choice3: "No depositar de inmediato el corto-punzante en el guardián",
-    choice4: "Doblar o partir agujas manualmente",
-    answer: 1,
+    choice2: "No depositar de inmediato el corto-punzante en el guardián",
+    choice3: "Doblar o partir agujas manualmente",
+    choice4: "Transportar objetos corto-punzantes protegidos",
+    answer: 4,
   },
   {
     question:
       "Son acciones preventivas para el manejo de objetos corto-punzantes, excepto:",
-    choice1: "Descartar la aguja en el guardián con la mano que venopuncionó",
-    choice2: "Usar los EPP de acuerdo al procedimiento",
-    choice3: "Re-encapuchar las agujas",
+    choice1: "Usar los EPP de acuerdo al procedimiento",
+    choice2: "Re-encapuchar las agujas",
+    choice3: "Descartar la aguja en el guardián con la mano que venopuncionó",
     choice4: "Solicitar ayuda en casos especiales",
-    answer: 1,
+    answer: 3,
   },
   {
     question: "Son ejemplos de comportamientos seguros, excepto:",
@@ -118,11 +118,11 @@ let questions = [
   {
     question:
       "Son acciones preventivas para el manejo de objetos corto-punzantes, excepto:",
-    choice1: "Descartar la aguja en el guardián con la mano que venopuncionó",
-    choice2: "Girar para buscar el guardián",
-    choice3: "Lo hago como puedo",
-    choice4: "Todas son correctas",
-    answer: 1,
+    choice1: "Girar para buscar el guardián",
+    choice2: "Lo hago como puedo",
+    choice3: "Todas son correctas",
+    choice4: "Descartar la aguja en el guardián con la mano que venopuncionó",
+    answer: 4,
   },
 ];
 
@@ -144,8 +144,8 @@ getNewQuestions = () => {
   }
 
   questionCounter++;
-  progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+  progressText.innerText = `Pregunta ${questionCounter} de ${MAX_QUESTIONS}`;
+  progressBarFull.style.height = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
   const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionsIndex];
