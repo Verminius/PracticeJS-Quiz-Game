@@ -49,6 +49,28 @@ body {
   padding: 2rem;
 }
 
+.container-index {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-puntajes {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-end {
+  align-items: center;
+  justify-content: center;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .head {
   width: 80vw;
   height: 5vh;
@@ -88,7 +110,7 @@ body {
   align-items: center;
 }
 
-.justify.center {
+.justify-center {
   justify-content: center;
 }
 
