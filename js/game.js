@@ -190,4 +190,27 @@ incrementScore = (num) => {
   scoreText.innerText = score;
 };
 
+//modales
+
+const llamada = document.querySelector("#llamada");
+const llamadaBtn = document.querySelector("#llamada-btn");
+const llamadaText = document.querySelector("#respuesta-llamada");
+
+var respuestas = [
+  "Es la Opción A",
+  "Creo que es B",
+  "Debe ser C",
+  "Seguro es la D",
+];
+
+console.log(respuestas);
+
+function activarLlamada() {
+  llamadaBtn.addEventListener("click", function () {
+    llamada.classList.toggle("visible");
+  });
+}
+
+activarLlamada();
+
 startGame();
