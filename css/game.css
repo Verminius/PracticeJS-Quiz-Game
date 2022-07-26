@@ -89,6 +89,10 @@ body {
   flex-direction: column;
 }
 
+.hud-item h1 {
+  margin-bottom: 0.5rem;
+}
+
 .hud-prefix {
   text-align: center;
   font-size: 2rem;
