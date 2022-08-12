@@ -192,6 +192,7 @@ incrementScore = (num) => {
 
 //modales
 
+// llamada
 const llamada = document.querySelector("#llamada");
 const llamadaBtn = document.querySelector("#llamada-btn");
 const llamadaText = document.querySelector("#respuesta-llamada");
@@ -203,7 +204,33 @@ var respuestas = [
   "Seguro es la D",
 ];
 
-console.log(respuestas);
+var respuesta = [...respuestas];
+
+function desordenarRespuestas() {
+  respuesta.sort(function () {
+    return 0.5 - Math.random();
+  });
+
+  console.log(respuesta);
+}
+
+desordenarRespuestas();
+
+function respuestaAleatoria() {
+  var contenedorRespuesta = document.querySelector("#textoLlamada");
+
+  contenedorRespuesta.innerHTML = "";
+
+  respuesta.forEach(function (e) {
+    var textoRespuesta = document.createElement("p");
+
+    textoRespuesta.innerHTML = '<p class="respuesta-llamada">' + e + "</p>";
+
+    contenedorRespuesta.appendChild(textoRespuesta);
+  });
+}
+
+respuestaAleatoria();
 
 function activarLlamada() {
   llamadaBtn.addEventListener("click", function () {
@@ -212,5 +239,18 @@ function activarLlamada() {
 }
 
 activarLlamada();
+
+// publico
+
+const publico = document.querySelector("#publico");
+const publicoBtn = document.querySelector("#publico-btn");
+
+function activarPublico() {
+  publicoBtn.addEventListener("click", function () {
+    publico.classList.toggle("visible");
+  });
+}
+
+activarPublico();
 
 startGame();

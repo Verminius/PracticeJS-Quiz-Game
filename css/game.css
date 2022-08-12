@@ -107,6 +107,7 @@ body {
   align-items: flex-end;
   width: 16rem;
   height: 39rem;
+  background: rgba(11, 46, 2, 0.4);
   border: 0.2rem solid green;
   margin-top: 2.4rem;
   border-radius: 20px;
