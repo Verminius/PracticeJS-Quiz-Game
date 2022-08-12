@@ -204,24 +204,24 @@ var respuestas = [
   "Seguro es la D",
 ];
 
-var respuesta = [...respuestas];
+console.log(respuestas);
 
-function desordenarRespuestas() {
-  respuesta.sort(function () {
-    return 0.5 - Math.random();
-  });
+// function desordenarRespuestas() {
+//   respuestas.sort(function () {
+//     return 0.5 - Math.random();
+//   });
 
-  console.log(respuesta);
-}
+//   console.log(respuestas);
+// }
 
-desordenarRespuestas();
+// desordenarRespuestas();
 
 function respuestaAleatoria() {
   var contenedorRespuesta = document.querySelector("#textoLlamada");
 
   contenedorRespuesta.innerHTML = "";
 
-  respuesta.forEach(function (e) {
+  respuestas.forEach(function (e) {
     var textoRespuesta = document.createElement("p");
 
     textoRespuesta.innerHTML = '<p class="respuesta-llamada">' + e + "</p>";
