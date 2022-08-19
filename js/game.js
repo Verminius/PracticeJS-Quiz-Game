@@ -197,15 +197,6 @@ const llamada = document.querySelector("#llamada");
 const llamadaBtn = document.querySelector("#llamada-btn");
 const llamadaText = document.querySelector("#respuesta-llamada");
 
-var respuestas = [
-  "Es la Opción A",
-  "Creo que es B",
-  "Debe ser C",
-  "Seguro es la D",
-];
-
-console.log(respuestas);
-
 const callAnswers = {
   "Es la Opción A": 0,
   "Creo que es B": 1,
@@ -234,25 +225,11 @@ function respuestaAleatoria() {
   contenedorRespuesta.appendChild(textoRespuesta);
 }
 
-// function respuestaAleatoria() {
-//     var contenedorRespuesta = document.querySelector("#textoLlamada");
-
-//     contenedorRespuesta.innerHTML = "";
-
-//     respuestas.forEach(function(e) {
-//         var textoRespuesta = document.createElement("p");
-
-//         textoRespuesta.innerHTML = '<p class="respuesta-llamada">' + e + "</p>";
-
-//         contenedorRespuesta.appendChild(textoRespuesta);
-//     });
-// }
-
 respuestaAleatoria();
 
 function activarLlamada() {
   llamadaBtn.addEventListener("click", function () {
-    llamada.classList.toggle("visible");
+    llamada.classList.add("visible");
   });
 }
 
