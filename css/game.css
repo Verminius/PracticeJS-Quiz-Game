@@ -250,6 +250,11 @@ body {
   transform: scale(100%);
 }
 
+#msg2 {
+  font-size: small;
+  text-align: center;
+}
+
 #msg3 {
   font-size: small;
   text-align: center;
