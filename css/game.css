@@ -1,316 +1,318 @@
 body {
-    color: white;
+  color: white;
 }
 
 .q-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 50px;
-    background: #008c44;
-    border: 2px solid white;
-    padding: 1.5rem 2rem;
-    margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50px;
+  background: #008c44;
+  border: 2px solid white;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .q-container h2 {
-    font-size: 2.3rem;
-    margin: 0;
+  font-size: 2.3rem;
+  margin: 0;
 }
 
 .choices {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .choice-container {
-    display: flex;
-    margin: 0.5rem;
-    width: 48%;
-    border-radius: 50px;
-    background: #92dbaf;
-    font-size: 3rem;
-    min-width: 25rem;
-    border: 2px solid white;
+  display: flex;
+  margin: 0.5rem;
+  width: 48%;
+  border-radius: 50px;
+  background: #92dbaf;
+  font-size: 3rem;
+  min-width: 25rem;
+  border: 2px solid white;
 }
 
 .choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(106, 226, 70, 0.6);
-    border: 4px solid white;
-    transition: transform 150ms;
-    transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(106, 226, 70, 0.6);
+  border: 4px solid white;
+  transition: transform 150ms;
+  transform: scale(1.03);
 }
 
 .choice-prefix {
-    padding: 2rem 2.5rem;
-    color: #008c44;
-    text-align: center;
-    align-self: center;
-    /*border-right: 1.5px solid white;*/
+  padding: 2rem 2.5rem;
+  color: #008c44;
+  text-align: center;
+  align-self: center;
+  /*border-right: 1.5px solid white;*/
 }
 
 .choice-text {
-    padding: 2rem;
-    width: 100%;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    color: #008c44;
-    border-left: 1.5px solid #6fd196;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #008c44;
+  border-left: 1.5px solid #6fd196;
 }
 
 .correct {
-    background: linear-gradient(#40ca77, #008c44);
+  background: linear-gradient(#40ca77, #008c44);
 }
 
 .incorrect {
-    background: linear-gradient(#d94659, #991022);
+  background: linear-gradient(#d94659, #991022);
 }
-
 
 /* Header*/
 
 #hud {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hud-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hud-item h1 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hud-prefix {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .hud-main-text {
-    text-align: center;
+  text-align: center;
 }
 
 #progressBar {
-    display: flex;
-    align-items: flex-end;
-    width: 16rem;
-    height: 39rem;
-    background: rgba(11, 46, 2, 0.4);
-    border: 0.2rem solid green;
-    margin-top: 2.4rem;
-    border-radius: 20px;
-    overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  width: 16rem;
+  height: 39rem;
+  background: rgba(11, 46, 2, 0.4);
+  border: 0.2rem solid green;
+  margin-top: 2.4rem;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .puntos-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 16rem;
-    height: 39rem;
-    position: absolute;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 16rem;
+  height: 39rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .puntos-container h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0%;
-    text-align: center;
-    color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0%;
+  text-align: center;
+  color: white;
 }
 
 #progressBarFull {
-    height: 100%;
-    background: green;
-    width: 100%;
-    border-radius: 15px;
-    transition: 0.3s;
+  height: 100%;
+  background: green;
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 
 .hud-item img {
-    position: absolute;
-    z-index: -1;
-    width: auto;
-    height: 80%;
-    justify-self: flex-start;
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 80%;
+  justify-self: flex-start;
 }
 
 .ayudas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ayuda-logo {
-    background: #ffdc5d;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-bottom: 1rem;
-    width: 10rem;
+  background: #ffdc5d;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 1rem;
+  width: 10rem;
 }
 
 .ayuda-logo:hover {
-    background-color: #f0ba47;
-    transition: transform 150ms;
-    transform: scale(1.1);
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(223, 226, 70, 0.712);
-    cursor: pointer;
+  background-color: #f0ba47;
+  transition: transform 150ms;
+  transform: scale(1.1);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(223, 226, 70, 0.712);
+  cursor: pointer;
 }
 
 .disable {
-    background-color: rgb(151, 150, 150);
-    border-radius: 50%;
-    border: 2px solid white;
-    cursor: not-allowed;
-    margin-bottom: 1rem;
-    width: 10rem;
+  background-color: rgb(151, 150, 150);
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: not-allowed;
+  margin-bottom: 1rem;
+  width: 10rem;
 }
 
 .disable:hover {
-    background-color: rgb(151, 150, 150);
-    transform: scale(1);
-    box-shadow: none;
+  background-color: rgb(151, 150, 150);
+  transform: scale(1);
+  box-shadow: none;
 }
 
 .ayuda-logo img {
-    width: 100%;
+  width: 100%;
 }
 
 .disable img {
-    width: 100%;
+  width: 100%;
 }
-
 
 /*modales*/
 
 .modal-container {
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 2;
-    visibility: hidden;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 2;
+  visibility: hidden;
 }
 
 .modal {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    transform: scale(0%);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(0%);
 }
 
 .modal img {
-    align-self: center;
-    justify-self: center;
-    height: auto;
-    width: 500px;
-    filter: drop-shadow(4px 3px 3px rgba(0, 0, 0, 0.4));
+  align-self: center;
+  justify-self: center;
+  height: auto;
+  width: 500px;
+  filter: drop-shadow(4px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .texto-llamada {
-    font-size: 2rem;
-    background-color: white;
-    color: #008c44;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  background-color: white;
+  color: #008c44;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .texto-llamada p {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .visible {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-    transform: scale(100%);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: scale(100%);
 }
 
+#msg3 {
+  font-size: small;
+  text-align: center;
+}
 
 /*Questions Container*/
 
 .question-container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: space-between;
-    margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-    }
-    .hud-item img {
-        position: absolute;
-        z-index: -1;
-        width: auto;
-        height: 58%;
-        justify-self: flex-start;
-    }
-    .q-container {
-        align-self: center;
-        width: 45rem;
-        min-width: 25rem;
-    }
-    #progressBar {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        width: 15rem;
-        height: 30rem;
-        border: 0.2rem solid green;
-        margin-top: 2.4rem;
-        border-radius: 20px;
-        overflow: hidden;
-        margin-bottom: 1rem;
-    }
-    .puntos-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 15rem;
-        height: 30rem;
-        position: absolute;
-        z-index: 1;
-    }
-    .puntos-container h6 {
-        font-size: 8px;
-        text-transform: uppercase;
-        font-weight: 400;
-        color: white;
-    }
-    .modal img {
-        align-self: center;
-        justify-self: center;
-        height: auto;
-        width: 40rem;
-    }
+  .choice-container {
+    min-width: 40rem;
+  }
+  .hud-item img {
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: 58%;
+    justify-self: flex-start;
+  }
+  .q-container {
+    align-self: center;
+    width: 45rem;
+    min-width: 25rem;
+  }
+  #progressBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 15rem;
+    height: 30rem;
+    border: 0.2rem solid green;
+    margin-top: 2.4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .puntos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15rem;
+    height: 30rem;
+    position: absolute;
+    z-index: 1;
+  }
+  .puntos-container h6 {
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+  }
+  .modal img {
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 40rem;
+  }
 }
