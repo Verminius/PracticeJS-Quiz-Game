@@ -230,6 +230,19 @@ body {
   filter: drop-shadow(4px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
+#graphic_a {
+  display: none;
+}
+#graphic_b {
+  display: flex;
+}
+#graphic_c {
+  display: none;
+}
+#graphic_d {
+  display: none;
+}
+
 .texto-llamada {
   font-size: 2rem;
   background-color: white;
