@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,118 +9,114 @@
     <link rel="icon" href="/PracticeJS-Quiz-Game/img/Favicon_100.svg" />
     <link rel="stylesheet" href="/PracticeJS-Quiz-Game/css/game.css" />
     <link rel="stylesheet" href="/PracticeJS-Quiz-Game/css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="head">
-      <div class="logo">
-        <img
-          src="/PracticeJS-Quiz-Game/img/Logo 100_QQSB.png"
-          class="logo-100"
-        />
-      </div>
-      <div class="logo">
-        <img
-          src="/PracticeJS-Quiz-Game/img/Logo bolivar_QQSB.png"
-          class="logo-bolivar"
-        />
-      </div>
+        <div class="logo">
+            <img src="/PracticeJS-Quiz-Game/img/Logo 100_QQSB.png" class="logo-100" />
+        </div>
+        <div class="logo">
+            <img src="/PracticeJS-Quiz-Game/img/Logo bolivar_QQSB.png" class="logo-bolivar" />
+        </div>
     </div>
 
     <!--MODALES-->
 
     <!----------llamada---------->
     <div class="modal-container">
-      <div class="modal" id="llamada">
-        <img src="/PracticeJS-Quiz-Game/img/llamada-a-un-amigo-1.gif" alt="" />
-        <div class="texto-llamada" id="textoLlamada">
-          <p class="respuesta-llamada">Es la opcion...</p>
+        <div class="modal" id="llamada">
+            <img src="/PracticeJS-Quiz-Game/img/llamada-a-un-amigo-1.gif" alt="" />
+            <div class="texto-llamada" id="textoLlamada">
+                <p class="respuesta-llamada">Es la opcion...</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!----------publico---------->
     <div class="modal-container">
-      <div class="modal" id="publico">
-        <img src="/PracticeJS-Quiz-Game/img/graficas a.gif" alt="" />
-      </div>
+        <div class="modal" id="publico">
+            <img src="/PracticeJS-Quiz-Game/img/graficas a.gif" alt="" />
+        </div>
     </div>
 
     <!--JUEGO-->
     <div class="container">
-      <div id="game" class="game">
-        <div id="hud">
-          <!--hud izquierda-->
-          <div class="hud-item">
-            <p id="progressText" class="hud-prefix">Question</p>
-            <div id="progressBar">
-              <div class="puntos-container">
-                <h6>Pregunta 13</h6>
-                <h6>Pregunta 12</h6>
-                <h6>Pregunta 11</h6>
-                <h6>Pregunta 10</h6>
-                <h6>Pregunta 9</h6>
-                <h6>Pregunta 8</h6>
-                <h6>Pregunta 7</h6>
-                <h6>Pregunta 6</h6>
-                <h6>Pregunta 5</h6>
-                <h6>Pregunta 4</h6>
-                <h6>Pregunta 3</h6>
-                <h6>Pregunta 2</h6>
-                <h6>Pregunta 1</h6>
-              </div>
-              <div id="progressBarFull"></div>
-            </div>
-          </div>
+        <div id="game" class="game">
+            <div id="hud">
+                <!--hud izquierda-->
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">Question</p>
+                    <div id="progressBar">
+                        <div class="puntos-container">
+                            <h6>Pregunta 13</h6>
+                            <h6>Pregunta 12</h6>
+                            <h6>Pregunta 11</h6>
+                            <h6>Pregunta 10</h6>
+                            <h6>Pregunta 9</h6>
+                            <h6>Pregunta 8</h6>
+                            <h6>Pregunta 7</h6>
+                            <h6>Pregunta 6</h6>
+                            <h6>Pregunta 5</h6>
+                            <h6>Pregunta 4</h6>
+                            <h6>Pregunta 3</h6>
+                            <h6>Pregunta 2</h6>
+                            <h6>Pregunta 1</h6>
+                        </div>
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
 
-          <!--hud centro-->
+                <!--hud centro-->
 
-          <div class="hud-item">
-            <img src="/PracticeJS-Quiz-Game/img/anima_1.gif" alt="" />
-          </div>
+                <div class="hud-item">
+                    <img src="/PracticeJS-Quiz-Game/img/anima_1.gif" alt="" />
+                </div>
 
-          <!--hud derecha-->
-          <div class="ayudas">
-            <div class="hud-item">
-              <h1 class="hud-main text" id="score">0</h1>
-              <p class="hud-prefix">Puntos</p>
+                <!--hud derecha-->
+                <div class="ayudas">
+                    <div class="hud-item">
+                        <h1 class="hud-main text" id="score">0</h1>
+                        <p class="hud-prefix">Puntos</p>
+                    </div>
+                    <div class="ayuda-logo" id="cincuenta-btn">
+                        <img src="/PracticeJS-Quiz-Game/img/Cincuenta_QQSB.png" alt="" />
+                    </div>
+                    <div class="ayuda-logo" id="publico-btn">
+                        <img src="/PracticeJS-Quiz-Game/img/Publico_QQSB.png" alt="" />
+                    </div>
+                    <div class="ayuda-logo" id="llamada-btn">
+                        <img src="/PracticeJS-Quiz-Game/img/Llamada_QQSB.png" alt="" />
+                    </div>
+                </div>
             </div>
-            <div class="ayuda-logo" id="cincuenta-btn">
-              <img src="/PracticeJS-Quiz-Game/img/Cincuenta_QQSB.png" alt="" />
+            <div class="question-container">
+                <div class="q-container">
+                    <h2 id="question">what is the answer to this question?</h2>
+                </div>
+                <div class="choices">
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice</p>
+                    </div>
+                </div>
             </div>
-            <div class="ayuda-logo" id="publico-btn">
-              <img src="/PracticeJS-Quiz-Game/img/Publico_QQSB.png" alt="" />
-            </div>
-            <div class="ayuda-logo" id="llamada-btn">
-              <img src="/PracticeJS-Quiz-Game/img/Llamada_QQSB.png" alt="" />
-            </div>
-          </div>
         </div>
-        <div class="question-container">
-          <div class="q-container">
-            <h2 id="question">what is the answer to this question?</h2>
-          </div>
-          <div class="choices">
-            <div class="choice-container">
-              <p class="choice-prefix">A</p>
-              <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choice-container">
-              <p class="choice-prefix">B</p>
-              <p class="choice-text" data-number="2">Choice</p>
-            </div>
-            <div class="choice-container">
-              <p class="choice-prefix">C</p>
-              <p class="choice-text" data-number="3">Choice</p>
-            </div>
-            <div class="choice-container">
-              <p class="choice-prefix">D</p>
-              <p class="choice-text" data-number="4">Choice</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <script src="/PracticeJS-Quiz-Game/js/game.js"></script>
-  </body>
+</body>
+
 </html>
