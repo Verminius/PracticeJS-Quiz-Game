@@ -17,7 +17,7 @@ let questions = [
     choice2: "Radiaciones ionzantes",
     choice3: "Quimicos",
     choice4: "Electricidad",
-    answer: 3,
+    answer: 1,
   },
   {
     question: "Un ejemplo de objetos corto-punzantes pueden ser:",
@@ -25,7 +25,7 @@ let questions = [
     choice2: "Agujas, ampolletas, algodones",
     choice3: "Lancetas, agujas y ampolletas",
     choice4: "Lancetas, bajalenguas y ampolletas",
-    answer: 1,
+    answer: 3,
   },
   {
     question:
@@ -62,7 +62,7 @@ let questions = [
     choice2: "Coprológico",
     choice3: "Gases Arteriales",
     choice4: "Valoración médica",
-    answer: 4,
+    answer: 1,
   },
   {
     question: "Doblar o partir agujas manualmente…",
@@ -96,7 +96,7 @@ let questions = [
     choice2: "Re-encapuchar las agujas",
     choice3: "Descartar la aguja en el guardián con la mano que venopuncionó",
     choice4: "Solicitar ayuda en casos especiales",
-    answer: 3,
+    answer: 2,
   },
   {
     question: "Son ejemplos de comportamientos seguros, excepto:",
@@ -113,16 +113,16 @@ let questions = [
     choice2: "Lo hago como puedo",
     choice3: "Re-encapuchar las agujas",
     choice4: "Solicitar ayuda en casos especiales",
-    answer: 1,
+    answer: 3,
   },
   {
     question:
       "Son acciones preventivas para el manejo de objetos corto-punzantes, excepto:",
     choice1: "Girar para buscar el guardián",
     choice2: "Lo hago como puedo",
-    choice3: "Todas son correctas",
+    choice3: "A y C son correctas",
     choice4: "Descartar la aguja en el guardián con la mano que venopuncionó",
-    answer: 4,
+    answer: 3,
   },
 ];
 
@@ -212,7 +212,7 @@ function getRandomProperty(callAnswers) {
 
 let finalAnswer = getRandomProperty(callAnswers);
 
-function respuestaAleatoria() {
+function printAnswer() {
   let contenedorRespuesta = document.querySelector("#textoLlamada");
 
   var textoRespuesta = document.createElement("p");
@@ -223,7 +223,7 @@ function respuestaAleatoria() {
   contenedorRespuesta.appendChild(textoRespuesta);
 }
 
-respuestaAleatoria();
+printAnswer();
 
 function activarLlamada() {
   llamadaBtn.addEventListener("click", function () {
