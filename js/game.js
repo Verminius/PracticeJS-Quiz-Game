@@ -57,7 +57,7 @@ let questions = [
   },
 
   {
-    question: "La eficácia de la vacunación de Hepatitis B se valida con:",
+    question: "La eficacia de la vacunación de Hepatitis B se valida con:",
     choice1: "Titulaciones",
     choice2: "Coprológico",
     choice3: "Gases Arteriales",
