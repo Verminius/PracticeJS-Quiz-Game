@@ -228,6 +228,19 @@ printAnswer();
 function activarLlamada() {
   llamadaBtn.addEventListener("click", function () {
     llamada.classList.toggle("visible");
+
+    let graphicA = document.getElementById("graphic_a");
+    let graphicB = document.getElementById("graphic_b");
+    let graphicC = document.getElementById("graphic_c");
+    let graphicD = document.getElementById("graphic_d");
+
+    function selectRandomGraphic(datos) {
+      return datos[Math.floor(Math.random() * datos.length)];
+    }
+
+    let graphics = [graphicA, graphicB, graphicC, graphicD];
+
+    console.log(selectRandomGraphic(graphics));
   });
 }
 
