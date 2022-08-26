@@ -4,11 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Quien Quiere Ser Bioseguro</title>
     <link rel="icon" href="/img/Favicon_100.svg" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!-- MODAL INSTRUCCIONES -->
+    <div class="instrucciones-container">
+      <div class="modal-contenedor">
+        <div class="margen-modal">
+          <div class="tittle-section">
+            <h1>INSTRUCCIONES</h1>
+            <i id="closeModal" class="fa-solid fa-circle-xmark"></i>
+          </div>
+          <div class="contenido-instrucciones">
+            <div class="instruccion">
+              <div class="texto-instruccion">
+                <p>
+                  Deberás contestar 13 preguntas sobre bioseguridad, para esto
+                  elige entre 4 opciones (A, B, C y D).
+                </p>
+              </div>
+              <div class="imagen-instruccion">
+                <img src="/img/opciones.png" alt="" />
+              </div>
+            </div>
+            <div class="instruccion">
+              <div class="imagen-instruccion">
+                <img src="/img/puntos.png" alt="" />
+              </div>
+              <div class="texto-instruccion">
+                <p>Cada acierto sumará a tu puntaje.</p>
+              </div>
+            </div>
+            <div class="instruccion">
+              <div class="texto-instruccion">
+                <p>
+                  Cuentas con dos ayudas: la llamada a un amigo y la ayuda del
+                  público. ¡CUIDADO! Incluso las ayudas tienen un margen de
+                  error, así que sus respuestas no son definitivas, lee bien las
+                  respuestas.
+                </p>
+              </div>
+              <div class="imagen-instruccion">
+                <img src="/img/ayudas.png" alt="" />
+              </div>
+            </div>
+            <div class="instruccion">
+              <div class="imagen-instruccion">
+                <img src="/img/guardar.png" alt="" />
+              </div>
+              <div class="texto-instruccion">
+                <p>Al final podrás guardar tu puntuación. ¡Diviértete!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN  -->
     <div class="head">
       <div class="logo">
         <img src="/img/Logo 100_QQSB.png" class="logo-100" />
@@ -22,9 +81,18 @@
         <div class="logo-QQSB">
           <img src="/img/Logo QQSB_QQSB.png" alt="" />
         </div>
-        <a href="/game.html" class="btn">JUGAR</a>
-        <a href="/highscores.html" id="highscore-btn" class="btn">PUNTAJES</a>
+        <div class="contenedor-botones">
+          <a href="/game.html" class="btn">JUGAR</a>
+          <div class="menu">
+            <a href="/highscores.html" id="highscore-btn" class="btn"
+              >PUNTAJES</a
+            >
+            <a class="btn" id="instrucciones">INSTRUCCIONES</a>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="/js/inicio.js"></script>
   </body>
 </html>

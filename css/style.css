@@ -138,15 +138,32 @@ body {
 
 .btn {
   font-size: 2.4rem;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   width: 30rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 1rem 0.5rem;
   text-decoration: none;
   color: rgb(16, 36, 7);
   background: linear-gradient(#40ca77, #008c44);
-  border-radius: 50px;
+  border-radius: 5rem;
   border: 2px solid white;
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.menu a {
+  font-size: 2.2rem;
 }
 
 .btn:hover {
@@ -157,6 +174,158 @@ body {
   transform: scale(1.01);
   border: 4px solid white;
 }
+
+/* MODAL  */
+.instrucciones-container {
+  width: 98vw;
+  height: 98vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.mostrar {
+  visibility: visible;
+}
+
+.modal-contenedor {
+  width: 50vw;
+  height: 780px;
+  background: rgba(32, 32, 32, 0.9);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.show-instrucciones {
+  transform: scale(1);
+}
+
+.margen-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 750px;
+  width: 95%;
+  border: 3px solid #008c44;
+  border-radius: 15px;
+}
+
+.tittle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.tittle-section h1 {
+  font-style: italic;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.tittle-section i {
+  color: #ffdc5d;
+  font-size: 3rem;
+  padding-right: 50px;
+  transition: all 0.3s;
+  transform: scaleX(1);
+}
+
+.tittle-section i:hover {
+  color: #40ca77;
+  transform: scale(1.1);
+}
+
+.tittle-section i:active {
+  color: #008c44;
+  transform: scale(0.9);
+}
+
+.contenido-instrucciones {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-top: 2px solid #008c44;
+}
+
+.instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+
+.texto-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0.6rem 5rem;
+}
+
+.texto-instruccion p {
+  font-size: 1.6rem;
+  color: white;
+  font-style: normal;
+  text-align: center;
+}
+
+.imagen-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 25%;
+}
+
+@media (max-width: 1300px) {
+  .modal-container {
+    width: 75vw;
+  }
+
+  .instruccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .texto-instruccion p {
+    font-size: 1rem;
+    color: white;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .imagen-instruccion {
+    height: 50%;
+  }
+
+  .imagen-instruccion img {
+    height: 80px;
+  }
+}
+
+/* FIN MODAL*/
 
 .btn[disabled]:hover {
   background: rgb(165, 165, 165);

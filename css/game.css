@@ -219,7 +219,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
-  transform: scale(0%);
+  transform: scale(0);
 }
 
 .modal img {
@@ -228,19 +228,6 @@ body {
   height: auto;
   width: 500px;
   filter: drop-shadow(4px 3px 3px rgba(0, 0, 0, 0.4));
-}
-
-#graphic_a {
-  display: none;
-}
-#graphic_b {
-  display: flex;
-}
-#graphic_c {
-  display: none;
-}
-#graphic_d {
-  display: none;
 }
 
 .texto-llamada {
@@ -256,11 +243,11 @@ body {
   font-size: 1.8rem;
 }
 
-.visible {
+.mostrar-modal {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
-  transform: scale(100%);
+  transform: scale(1);
 }
 
 #msg2 {
